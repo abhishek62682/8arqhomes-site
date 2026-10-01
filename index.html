@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 ARQ HOMES | Home Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+<link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  rel="stylesheet"
+/>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --font-secondary: "Manrope", sans-serif;
+      }
+
+      /* hero slider pagination: small dots, active one stretches into a long bar */
+      .heroPagination .swiper-pagination-bullet {
+        width: 8px;
+        height: 4px;
+        border-radius: 2px;
+        background: #fff;
+        opacity: .6;
+        transition: width .3s ease, opacity .3s ease;
+      }
+      .heroPagination .swiper-pagination-bullet-active {
+        width: 32px;
+        opacity: 1;
+      }
+
+      /* default (unhovered, menu-closed) nav look: readability gradient over the hero */
+      .header-overlay {
+        color: var(--color-white) !important;
+        box-shadow: none !important;
+        background: linear-gradient(rgba(10, 9, 8, 0.84), rgba(10, 9, 8, 0.62) 42%, rgba(10, 9, 8, 0.28) 72%, rgba(10, 9, 8, 0)) !important;
+        border-bottom: 0px !important;
+      }
+    </style>
+</head>
+<body class="font-['Space_Grotesk',serif]">
+
+    <div class="root">
+
+
+
+       <header id="mainHeader" class="relative">
+
+         <div id="promoBanner" class="font-secondary w-full h-[36px] z-[34] bg-[#0a0908] text-white overflow-hidden text-[10px] leading-[20px] tracking-widest">
+            <div id="promoStrip">
+               <div class="h-[36px] flex items-center justify-center">Cash On Delivery Available</div>
+               <div class="h-[36px] flex items-center justify-center">Free Delivery &ndash; Across India</div>
+               <div class="h-[36px] flex items-center justify-center">Same Day Dispatch</div>
+               <div class="h-[36px] flex items-center justify-center">Cash On Delivery Available</div>
+            </div>
+         </div>
+
+         <nav id="mainNav" class="bg-white text-black w-full px-[15px]  text-[12px] leading-[20px] uppercase transition-colors duration-300">
+
+
+            <div class="top-nav h-[80px] flex items-center justify-between">
+
+                <div class="flex flex-1 items-center gap-4">
+
+                    <i class="ri-search-line text-[18px]"></i>
+                    <a href="" class="hidden sm:inline">Designers</a>
+                <a href="" class="hidden sm:inline">Projects</a>
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="middle">
+
+                    <img id="navLogo" class="w-[120px] transition-[filter] duration-300" src="https://8arqhomes.vercel.app/assets/logo/logo-white.png" alt="">
+                </div>
+
+
+
+                <div class="flex gap-4 flex-1 justify-end items-center">
+
+                    
+
+                    <i class="ri-user-line text-[18px]"></i>
+                    <i class="ri-heart-line text-[18px]"></i>
+                    <i class="ri-shopping-cart-line text-[18px]"></i>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <ul id="navCategories" class="-mx-[15px] px-[15px] flex items-center h-[48px] justify-start md:justify-center space-x-8 border-t border-black/20 overflow-x-auto whitespace-nowrap" style="scrollbar-width:none;">
+                <li class="shrink-0"><a class="nav-cat-link relative cursor-pointer py-1 transition-opacity duration-200" data-cat="artifacts">Artifacts</a></li>
+                <li class="shrink-0"><a class="nav-cat-link relative cursor-pointer py-1 transition-opacity duration-200" data-cat="basins">Basins</a></li>
+                <li class="shrink-0"><a class="nav-cat-link relative cursor-pointer py-1 transition-opacity duration-200" data-cat="baths">Baths</a></li>
+                <li class="shrink-0"><a class="nav-cat-link relative cursor-pointer py-1 transition-opacity duration-200" data-cat="display-collection">Display Collection</a></li>
+                <li class="shrink-0"><a class="nav-cat-link relative cursor-pointer py-1 transition-opacity duration-200" data-cat="fireplaces">Fireplaces</a></li>
+                <li class="shrink-0"><a class="nav-cat-link relative cursor-pointer py-1 transition-opacity duration-200" data-cat="flooring">Flooring</a></li>
+                <li class="shrink-0"><a class="nav-cat-link relative cursor-pointer py-1 transition-opacity duration-200" data-cat="fountains">Fountains</a></li>
+                <li class="shrink-0"><a class="nav-cat-link relative cursor-pointer py-1 transition-opacity duration-200" data-cat="furniture">Furniture</a></li>
+            </ul>
+
+
+
+        </nav>
+
+        <div id="megaMenu" class="fixed left-0 w-full top-[164px] z-[32] bg-[#0a0908] text-white border-t border-white/15 overflow-hidden opacity-0 max-h-0 transition-[max-height,opacity] duration-400 ease-in-out normal-case">
+            <div id="megaMenuContent" class="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 p-6 md:p-[32px] box-border max-h-[75vh] md:max-h-none overflow-y-auto"></div>
+        </div>
+       </header>
+
+
+       <div class="swiper heroSwiper relative">
+          <div class="swiper-wrapper">
+
+             <div class="swiper-slide relative !h-[560px] sm:!h-[520px] md:!h-[600px]">
+                <img class="absolute inset-0 w-full h-full object-cover" src="images/hero-slide-new.avif" alt="">
+                <div class="absolute inset-0 bg-black/25"></div>
+                <div class="relative z-[2] h-full flex flex-col items-center justify-center text-center px-[15px]">
+                   <p class="text-white text-[13px] tracking-[0.2em] uppercase mb-4">Comfort Meets Design</p>
+                   <h2 class="text-white text-[36px] md:text-[56px] leading-[42px] md:leading-[60px] font-normal max-w-[760px] mb-8">Timeless Interiors, Handcrafted</h2>
+                   <a href="" class="bg-[#d9cdb8] text-[#2b2825] text-[14px] font-normal px-8 py-4">Discover Now</a>
+                </div>
+             </div>
+
+             <div class="swiper-slide relative !h-[560px] sm:!h-[520px] md:!h-[600px]">
+                <img class="absolute inset-0 w-full h-full object-cover" src="images/hero-slide-2.png" alt="">
+                <div class="absolute inset-0 bg-black/25"></div>
+                <div class="relative z-[2] h-full flex flex-col items-center justify-center text-center px-[15px]">
+                   <p class="text-white text-[13px] tracking-[0.2em] uppercase mb-4">Carved From Stone</p>
+                   <h2 class="text-white text-[36px] md:text-[56px] leading-[42px] md:leading-[60px] font-normal max-w-[760px] mb-8">Spaces Shaped<br>By Craft</h2>
+                   <a href="" class="bg-[#d9cdb8] text-[#2b2825] text-[14px] font-normal px-8 py-4">Discover Now</a>
+                </div>
+             </div>
+
+          </div>
+
+          <div class="swiper-button-prev !hidden md:!flex !text-black !w-[35px] !h-[70px] !top-1/2 !mt-[-35px] !bg-white after:!text-[16px]"></div>
+          <div class="swiper-button-next !hidden md:!flex !text-black !w-[35px] !h-[70px] !top-1/2 !mt-[-35px] !bg-white after:!text-[16px]"></div>
+          <div class="swiper-pagination heroPagination"></div>
+       </div>
+
+       <section id="explore-range" class="bg-white pt-[96px]">
+          <div class="max-w-[1140px] mx-auto px-[15px]">
+             <h2 class="text-[32px] leading-[40px] font-normal text-black text-center mb-14">Shop by category</h2>
+          </div>
+
+             <div class="relative max-w-[1140px] mx-auto">
+                <button id="explorePrev" class="hidden md:flex absolute left-[8px] top-[64px] w-10 h-10 rounded-full bg-white shadow-md items-center justify-center text-[18px] z-[2]"><i class="ri-arrow-left-s-line"></i></button>
+                <button id="exploreNext" class="hidden md:flex absolute right-[8px] top-[64px] w-10 h-10 rounded-full bg-white shadow-md items-center justify-center text-[18px] z-[2]"><i class="ri-arrow-right-s-line"></i></button>
+
+                <div id="exploreTrack" class="flex gap-8 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 pl-[15px] pr-[15px] sm:pl-0 sm:pr-0 sm:mx-auto sm:w-[499px] md:w-[676px] lg:w-[1030px]" style="scrollbar-width:none;">
+                   <a href="#new-arrivals" class="shrink-0 w-[145px] text-center snap-start">
+                      <div class="w-[145px] h-[145px] rounded-full bg-[#a79a74] flex items-center justify-center mb-4">
+                         <span class="text-white text-[22px] font-normal tracking-wide">NEW</span>
+                      </div>
+                      <div class="text-[15px] text-[#2b2825]">New Arrivals</div>
+                   </a>
+
+                   <a href="" class="shrink-0 w-[145px] text-center snap-start" data-cat="artifacts">
+                      <div class="w-[145px] h-[145px] rounded-full overflow-hidden mb-4">
+                         <img class="w-full h-full object-cover" src="images/artifacts-1.avif" alt="Artifacts">
+                      </div>
+                      <div class="text-[15px] text-[#2b2825]">Artifacts</div>
+                   </a>
+
+                   <a href="" class="shrink-0 w-[145px] text-center snap-start" data-cat="basins">
+                      <div class="w-[145px] h-[145px] rounded-full overflow-hidden mb-4">
+                         <img class="w-full h-full object-cover" src="images/basins-1.avif" alt="Basins">
+                      </div>
+                      <div class="text-[15px] text-[#2b2825]">Basins</div>
+                   </a>
+
+                   <a href="" class="shrink-0 w-[145px] text-center snap-start" data-cat="baths">
+                      <div class="w-[145px] h-[145px] rounded-full overflow-hidden mb-4">
+                         <img class="w-full h-full object-cover" src="images/baths-1.avif" alt="Baths">
+                      </div>
+                      <div class="text-[15px] text-[#2b2825]">Baths</div>
+                   </a>
+
+                   <a href="" class="shrink-0 w-[145px] text-center snap-start" data-cat="display-collection">
+                      <div class="w-[145px] h-[145px] rounded-full overflow-hidden mb-4">
+                         <img class="w-full h-full object-cover" src="images/display-1.avif" alt="Display Collection">
+                      </div>
+                      <div class="text-[15px] text-[#2b2825]">Display</div>
+                   </a>
+
+                   <a href="" class="shrink-0 w-[145px] text-center snap-start" data-cat="fireplaces">
+                      <div class="w-[145px] h-[145px] rounded-full overflow-hidden mb-4">
+                         <img class="w-full h-full object-cover" src="images/fireplaces-1.avif" alt="Fireplaces">
+                      </div>
+                      <div class="text-[15px] text-[#2b2825]">Fireplaces</div>
+                   </a>
+
+                   <a href="" class="shrink-0 w-[145px] text-center snap-start" data-cat="flooring">
+                      <div class="w-[145px] h-[145px] rounded-full overflow-hidden mb-4">
+                         <img class="w-full h-full object-cover" src="images/flooring-1.avif" alt="Flooring">
+                      </div>
+                      <div class="text-[15px] text-[#2b2825]">Flooring</div>
+                   </a>
+
+                   <a href="" class="shrink-0 w-[145px] text-center snap-start" data-cat="fountains">
+                      <div class="w-[145px] h-[145px] rounded-full overflow-hidden mb-4">
+                         <img class="w-full h-full object-cover" src="images/fountains-1.avif" alt="Fountains">
+                      </div>
+                      <div class="text-[15px] text-[#2b2825]">Fountains</div>
+                   </a>
+
+                   <a href="" class="shrink-0 w-[145px] text-center snap-start" data-cat="furniture">
+                      <div class="w-[145px] h-[145px] rounded-full overflow-hidden mb-4">
+                         <img class="w-full h-full object-cover" src="images/furniture-1.avif" alt="Furniture">
+                      </div>
+                      <div class="text-[15px] text-[#2b2825]">Furniture</div>
+                   </a>
+                </div>
+             </div>
+       </section>
+
+       <section id="promo-grid" class="bg-white pt-[96px] px-[15px]">
+          <div class="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+
+             <div class="grid grid-rows-2 gap-6">
+                <a href="" class="group relative overflow-hidden min-h-[320px] md:min-h-[240px] bg-[#e7e3da]">
+                   <img class="absolute inset-0 w-full h-full object-cover" src="images/promo-top-left.jpg" alt="Handcrafted Dining Furniture">
+                   <div class="absolute inset-0 bg-gradient-to-r from-black/55 via-black/10 to-transparent"></div>
+                   <div class="relative z-[2] h-full flex flex-col justify-end px-8 py-8 max-w-[300px]">
+                      <h3 class="text-white text-[26px] leading-[32px] font-normal mb-6">Handcrafted Dining Furniture</h3>
+                      <span class="inline-block bg-black text-white text-[14px] font-normal px-6 py-3 w-fit">Shop Now</span>
+                   </div>
+                </a>
+
+                <a href="" class="group relative overflow-hidden min-h-[320px] md:min-h-[240px] bg-[#ecdfd0]">
+                   <img class="absolute inset-0 w-full h-full object-cover" src="images/promo-bottom-left.jpg" alt="Statement Lounge Furniture">
+                   <div class="absolute inset-0 bg-gradient-to-r from-black/55 via-black/10 to-transparent"></div>
+                   <div class="relative z-[2] h-full flex flex-col justify-end px-8 py-8 max-w-[300px]">
+                      <h3 class="text-white text-[26px] leading-[32px] font-normal mb-6">Statement Lounge Furniture</h3>
+                      <span class="inline-block bg-black text-white text-[14px] font-normal px-6 py-3 w-fit">Shop Now</span>
+                   </div>
+                </a>
+             </div>
+
+             <a href="" class="group relative overflow-hidden min-h-[496px] bg-[#d9cfaf]">
+                <img class="absolute inset-0 w-full h-full object-cover" src="images/promo-right-essex-bath.webp" alt="Outdoor Fountains">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+                <div class="relative z-[2] h-full flex flex-col justify-end px-8 py-10 max-w-[420px]">
+                   <h3 class="text-white text-[32px] leading-[38px] font-normal mb-4">Hand-Finished Stone Baths</h3>
+                   <p class="font-secondary text-white/90 text-[15px] leading-[22px] mb-6">Every bath is carved, fitted and polished on-site by our master craftsmen for a flawless finish in your home.</p>
+                   <span class="inline-block bg-black text-white text-[14px] font-normal px-6 py-3 w-fit">Shop Now</span>
+                </div>
+             </a>
+
+          </div>
+       </section>
+
+       <section id="new-arrivals" class="bg-white py-[96px]">
+          <div class="max-w-[1140px] mx-auto px-[15px]">
+             <div class="flex flex-wrap items-center justify-between gap-4 mb-10">
+                <h2 class="text-[28px] sm:text-[32px] leading-[36px] sm:leading-[40px] font-normal text-black">New Arrivals</h2>
+                <div class="flex items-center gap-2">
+                   <button class="arrivals-tab bg-[#f2efe9] px-4 py-2 text-[13px] text-black" data-tab="new">New Arrivals</button>
+                   <button class="arrivals-tab px-4 py-2 text-[13px] text-[#6b6660]" data-tab="best">Best Sellers</button>
+                </div>
+             </div>
+          </div>
+
+          <div class="pl-[15px] md:pl-[max(15px,calc((100vw-1140px)/2+15px))]">
+             <div id="arrivalsTrack" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 pr-[15px]" style="scrollbar-width:none;">
+                <div class="group shrink-0 w-[260px] snap-start" data-tab="new">
+                   <div class="relative bg-[#f2efe9] aspect-[4/5] mb-4 overflow-hidden">
+                      <span class="absolute top-4 left-4 bg-[#b5573f] text-white text-[11px] font-normal px-3 py-1 rounded-full">Sale</span>
+                      <img class="w-full h-full object-cover" src="images/basins-4.avif" alt="Onyx Halo Basin">
+                      <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"><i class="ri-shopping-cart-2-line"></i></button>
+                   </div>
+                   <div class="text-[12px] text-[#8a8478] mb-1">Basin</div>
+                   <div class="text-[15px] font-normal text-[#2b2825] mb-1">Onyx Halo Basin</div>
+                   <div class="text-[14px] text-[#2b2825]">$420.00 <span class="line-through text-[#8a8478] ml-2">$480.00</span></div>
+                </div>
+
+                <div class="group shrink-0 w-[260px] snap-start" data-tab="new">
+                   <div class="relative bg-[#f2efe9] aspect-[4/5] mb-4 overflow-hidden">
+                      <img class="w-full h-full object-cover" src="images/category-furniture.png" alt="Walnut Accent Chair">
+                      <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"><i class="ri-shopping-cart-2-line"></i></button>
+                   </div>
+                   <div class="text-[12px] text-[#8a8478] mb-1">Furniture</div>
+                   <div class="text-[15px] font-normal text-[#2b2825] mb-1">Walnut Accent Chair</div>
+                   <div class="text-[14px] text-[#2b2825]">$560.00</div>
+                </div>
+
+                <div class="group shrink-0 w-[260px] snap-start" data-tab="best">
+                   <div class="relative bg-[#f2efe9] aspect-[4/5] mb-4 overflow-hidden">
+                      <span class="absolute top-4 left-4 bg-[#6f7a5e] text-white text-[11px] font-normal px-3 py-1 rounded-full">Best Sellers</span>
+                      <img class="w-full h-full object-cover" src="images/fountains-1.avif" alt="Celestial Form Sculpture">
+                      <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"><i class="ri-shopping-cart-2-line"></i></button>
+                   </div>
+                   <div class="text-[12px] text-[#8a8478] mb-1">Sculpture</div>
+                   <div class="text-[15px] font-normal text-[#2b2825] mb-1">Celestial Form Sculpture</div>
+                   <div class="text-[14px] text-[#2b2825]">$310.00</div>
+                </div>
+
+                <div class="group shrink-0 w-[260px] snap-start" data-tab="new">
+                   <div class="relative bg-[#f2efe9] aspect-[4/5] mb-4 overflow-hidden">
+                      <img class="w-full h-full object-cover" src="images/baths-1.avif" alt="Monolith Fireplace">
+                      <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"><i class="ri-shopping-cart-2-line"></i></button>
+                   </div>
+                   <div class="text-[12px] text-[#8a8478] mb-1">Fireplace</div>
+                   <div class="text-[15px] font-normal text-[#2b2825] mb-1">Monolith Fireplace</div>
+                   <div class="text-[14px] text-[#2b2825]">$890.00</div>
+                </div>
+
+                <div class="group shrink-0 w-[260px] snap-start" data-tab="new">
+                   <div class="relative bg-[#f2efe9] aspect-[4/5] mb-4 overflow-hidden">
+                      <img class="w-full h-full object-cover" src="images/baths-2.avif" alt="Aurora Soaking Tub">
+                      <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"><i class="ri-shopping-cart-2-line"></i></button>
+                   </div>
+                   <div class="text-[12px] text-[#8a8478] mb-1">Bath</div>
+                   <div class="text-[15px] font-normal text-[#2b2825] mb-1">Aurora Soaking Tub</div>
+                   <div class="text-[14px] text-[#2b2825]">$610.00</div>
+                </div>
+
+                <div class="group shrink-0 w-[260px] snap-start" data-tab="new">
+                   <div class="relative bg-[#f2efe9] aspect-[4/5] mb-4 overflow-hidden">
+                      <img class="w-full h-full object-cover" src="images/artifacts-2.avif" alt="Terra Essence Sculpture">
+                      <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"><i class="ri-shopping-cart-2-line"></i></button>
+                   </div>
+                   <div class="text-[12px] text-[#8a8478] mb-1">Sculpture</div>
+                   <div class="text-[15px] font-normal text-[#2b2825] mb-1">Terra Essence Sculpture</div>
+                   <div class="text-[14px] text-[#2b2825]">$340.00</div>
+                </div>
+
+                <div class="group shrink-0 w-[260px] snap-start" data-tab="new">
+                   <div class="relative bg-[#f2efe9] aspect-[4/5] mb-4 overflow-hidden">
+                      <span class="absolute top-4 left-4 bg-[#b5573f] text-white text-[11px] font-normal px-3 py-1 rounded-full">Sale</span>
+                      <img class="w-full h-full object-cover" src="images/display-1.avif" alt="Elysian Orb Vase">
+                      <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"><i class="ri-shopping-cart-2-line"></i></button>
+                   </div>
+                   <div class="text-[12px] text-[#8a8478] mb-1">Display</div>
+                   <div class="text-[15px] font-normal text-[#2b2825] mb-1">Elysian Orb Vase</div>
+                   <div class="text-[14px] text-[#2b2825]">$180.00 <span class="line-through text-[#8a8478] ml-2">$220.00</span></div>
+                </div>
+
+                <div class="group shrink-0 w-[260px] snap-start" data-tab="new">
+                   <div class="relative bg-[#f2efe9] aspect-[4/5] mb-4 overflow-hidden">
+                      <img class="w-full h-full object-cover" src="images/flooring-1.avif" alt="Calacatta Slab Flooring">
+                      <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"><i class="ri-shopping-cart-2-line"></i></button>
+                   </div>
+                   <div class="text-[12px] text-[#8a8478] mb-1">Flooring</div>
+                   <div class="text-[15px] font-normal text-[#2b2825] mb-1">Calacatta Slab Flooring</div>
+                   <div class="text-[14px] text-[#2b2825]">$45.00 /sqft</div>
+                </div>
+
+                <div class="group shrink-0 w-[260px] snap-start" data-tab="best">
+                   <div class="relative bg-[#f2efe9] aspect-[4/5] mb-4 overflow-hidden">
+                      <span class="absolute top-4 left-4 bg-[#6f7a5e] text-white text-[11px] font-normal px-3 py-1 rounded-full">Best Sellers</span>
+                      <img class="w-full h-full object-cover" src="images/fountains-2.avif" alt="Serenity Water Feature">
+                      <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"><i class="ri-shopping-cart-2-line"></i></button>
+                   </div>
+                   <div class="text-[12px] text-[#8a8478] mb-1">Fountain</div>
+                   <div class="text-[15px] font-normal text-[#2b2825] mb-1">Serenity Water Feature</div>
+                   <div class="text-[14px] text-[#2b2825]">$720.00</div>
+                </div>
+             </div>
+          </div>
+
+          <div class="max-w-[1140px] mx-auto px-[15px]">
+             <div class="flex items-center justify-between mt-10">
+                <div class="flex-1 max-w-[220px] h-[2px] bg-[#e5e2da] relative overflow-hidden">
+                   <div id="arrivalsProgress" class="absolute left-0 top-0 h-full bg-black transition-[width] duration-300 ease-out"></div>
+                </div>
+                <div class="flex gap-2">
+                   <button id="arrivalsPrev" class="w-10 h-10 rounded-full border border-[#d9d5cd] flex items-center justify-center text-[18px]"><i class="ri-arrow-left-s-line"></i></button>
+                   <button id="arrivalsNext" class="w-10 h-10 rounded-full border border-[#d9d5cd] flex items-center justify-center text-[18px]"><i class="ri-arrow-right-s-line"></i></button>
+                </div>
+             </div>
+          </div>
+       </section>
+
+       <section class="bg-[#f2efe9] py-[96px] px-[15px]">
+          <div class="max-w-[1140px] mx-auto text-center">
+             <h2 class="text-[32px] leading-[40px] font-normal text-black mb-4">Premium Natural Stone,<br>Sourced Worldwide</h2>
+             <p class="font-secondary text-[15px] leading-[24px] text-[#6b7280] max-w-[360px] mx-auto mb-14">We work with six core stone families, each block hand-selected for grain, density and finish.</p>
+
+             <div class="grid grid-cols-3 sm:grid-cols-6 gap-4 sm:gap-6">
+                <div>
+                   <div class="w-full aspect-square mb-4 overflow-hidden rounded-full"><img src="images/material-marble.jpg" alt="Marble" class="w-full h-full object-cover"></div>
+                   <p class="text-[15px] font-normal text-[#1c2333]">Marble</p>
+                </div>
+                <div>
+                   <div class="w-full aspect-square mb-4 overflow-hidden rounded-full"><img src="images/material-granite.jpg" alt="Granite" class="w-full h-full object-cover"></div>
+                   <p class="text-[15px] font-normal text-[#1c2333]">Granite</p>
+                </div>
+                <div>
+                   <div class="w-full aspect-square mb-4 overflow-hidden rounded-full"><img src="images/material-sandstone.jpg" alt="Sandstone" class="w-full h-full object-cover"></div>
+                   <p class="text-[15px] font-normal text-[#1c2333]">Sandstone</p>
+                </div>
+                <div>
+                   <div class="w-full aspect-square mb-4 overflow-hidden rounded-full"><img src="images/material-limestone.jpg" alt="Limestone" class="w-full h-full object-cover"></div>
+                   <p class="text-[15px] font-normal text-[#1c2333]">Limestone</p>
+                </div>
+                <div>
+                   <div class="w-full aspect-square mb-4 overflow-hidden rounded-full"><img src="images/material-slate.jpg" alt="Slate" class="w-full h-full object-cover"></div>
+                   <p class="text-[15px] font-normal text-[#1c2333]">Slate</p>
+                </div>
+                <div>
+                   <div class="w-full aspect-square mb-4 overflow-hidden rounded-full"><img src="images/material-quartz.png" alt="Quartz" class="w-full h-full object-cover"></div>
+                   <p class="text-[15px] font-normal text-[#1c2333]">Quartz</p>
+                </div>
+             </div>
+          </div>
+       </section>
+
+       <section id="collection-banners" class="bg-white pt-[96px] pb-[96px] px-[15px]">
+          <div class="max-w-[1140px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+
+             <a href="" class="group relative overflow-hidden h-[280px] md:h-[380px]">
+                <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="images/banner-basins.webp" alt="The Basins Collection">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                <div class="relative z-[2] h-full flex flex-col items-start justify-end text-left px-6 pb-10">
+                   <h3 class="text-white text-[22px] leading-[28px] font-normal mb-2">Carved From Stone</h3>
+                   <span class="inline-block font-secondary text-white text-[14px] font-medium underline">Shop Now</span>
+                </div>
+             </a>
+
+             <a href="" class="group relative overflow-hidden h-[280px] md:h-[380px]">
+                <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="images/banner-furniture.webp" alt="The Furniture Collection">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                <div class="relative z-[2] h-full flex flex-col items-start justify-end text-left px-6 pb-10">
+                   <h3 class="text-white text-[22px] leading-[28px] font-normal mb-2">Sculpted In Stone</h3>
+                   <span class="inline-block font-secondary text-white text-[14px] font-medium underline">Shop Now</span>
+                </div>
+             </a>
+
+             <a href="" class="group relative overflow-hidden h-[280px] md:h-[380px]">
+                <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="images/banner-wallart.png" alt="The Wall Art Collection">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                <div class="relative z-[2] h-full flex flex-col items-start justify-end text-left px-6 pb-10">
+                   <h3 class="text-white text-[22px] leading-[28px] font-normal mb-2">Sculptural Pieces</h3>
+                   <span class="inline-block font-secondary text-white text-[14px] font-medium underline">Shop Now</span>
+                </div>
+             </a>
+
+          </div>
+       </section>
+
+       <section id="featured-products" class="bg-white pb-[96px]">
+          <div class="max-w-[1140px] mx-auto px-[15px]">
+             <h2 class="text-[32px] leading-[40px] font-normal text-black text-center mb-14">Featured Products</h2>
+          </div>
+
+          <div class="pl-[15px] md:pl-[max(15px,calc((100vw-1140px)/2+15px))]">
+             <div id="featuredTrack" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 pr-[15px]" style="scrollbar-width:none;">
+
+                <div class="group shrink-0 w-[260px] snap-start">
+                   <div class="relative bg-[#f2efe9] aspect-[4/5] mb-4 overflow-hidden">
+                      <img class="w-full h-full object-cover" src="images/basins-2.avif" alt="Marble Wave Basin">
+                      <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"><i class="ri-shopping-cart-2-line"></i></button>
+                   </div>
+                   <div class="text-[12px] text-[#8a8478] mb-1">Basin</div>
+                   <div class="text-[15px] font-normal text-[#2b2825] mb-1">Marble Wave Basin</div>
+                   <div class="text-[14px] text-[#2b2825]">$420.00</div>
+                </div>
+
+                <div class="group shrink-0 w-[260px] snap-start">
+                   <div class="relative bg-[#f2efe9] aspect-[4/5] mb-4 overflow-hidden">
+                      <img class="w-full h-full object-cover" src="images/fireplaces-3.avif" alt="Ember Stone Surround">
+                      <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"><i class="ri-shopping-cart-2-line"></i></button>
+                   </div>
+                   <div class="text-[12px] text-[#8a8478] mb-1">Fireplace</div>
+                   <div class="text-[15px] font-normal text-[#2b2825] mb-1">Ember Stone Surround</div>
+                   <div class="text-[14px] text-[#2b2825]">$890.00</div>
+                </div>
+
+                <div class="group shrink-0 w-[260px] snap-start">
+                   <div class="relative bg-[#f2efe9] aspect-[4/5] mb-4 overflow-hidden">
+                      <img class="w-full h-full object-cover" src="images/furniture-3.avif" alt="Heritage Sideboard">
+                      <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"><i class="ri-shopping-cart-2-line"></i></button>
+                   </div>
+                   <div class="text-[12px] text-[#8a8478] mb-1">Furniture</div>
+                   <div class="text-[15px] font-normal text-[#2b2825] mb-1">Heritage Sideboard</div>
+                   <div class="text-[14px] text-[#2b2825]">$650.00</div>
+                </div>
+
+                <div class="group shrink-0 w-[260px] snap-start">
+                   <div class="relative bg-[#f2efe9] aspect-[4/5] mb-4 overflow-hidden">
+                      <img class="w-full h-full object-cover" src="images/fountains-4.avif" alt="Courtyard Stone Fountain">
+                      <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"><i class="ri-shopping-cart-2-line"></i></button>
+                   </div>
+                   <div class="text-[12px] text-[#8a8478] mb-1">Fountain</div>
+                   <div class="text-[15px] font-normal text-[#2b2825] mb-1">Courtyard Stone Fountain</div>
+                   <div class="text-[14px] text-[#2b2825]">$720.00</div>
+                </div>
+
+                <div class="group shrink-0 w-[260px] snap-start">
+                   <div class="relative bg-[#f2efe9] aspect-[4/5] mb-4 overflow-hidden">
+                      <img class="w-full h-full object-cover" src="images/artifacts-3.avif" alt="Elysian Orb Flow Vase">
+                      <button class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-[16px] opacity-0 group-hover:opacity-100 transition-opacity duration-200"><i class="ri-shopping-cart-2-line"></i></button>
+                   </div>
+                   <div class="text-[12px] text-[#8a8478] mb-1">Display</div>
+                   <div class="text-[15px] font-normal text-[#2b2825] mb-1">Elysian Orb Flow Vase</div>
+                   <div class="text-[14px] text-[#2b2825]">$310.00</div>
+                </div>
+
+             </div>
+          </div>
+
+          <div class="max-w-[1140px] mx-auto px-[15px]">
+             <div class="flex items-center justify-between mt-10">
+                <div class="flex-1 max-w-[220px] h-[2px] bg-[#e5e2da] relative overflow-hidden">
+                   <div id="featuredProgress" class="absolute left-0 top-0 h-full bg-black transition-[width] duration-300 ease-out"></div>
+                </div>
+                <div class="flex gap-2">
+                   <button id="featuredPrev" class="w-10 h-10 rounded-full border border-[#d9d5cd] flex items-center justify-center text-[18px]"><i class="ri-arrow-left-s-line"></i></button>
+                   <button id="featuredNext" class="w-10 h-10 rounded-full border border-[#d9d5cd] flex items-center justify-center text-[18px]"><i class="ri-arrow-right-s-line"></i></button>
+                </div>
+             </div>
+          </div>
+       </section>
+
+        <section class="bg-[#f2efe9] pt-[64px] pb-[56px] px-[15px] border-b border-[#e5e2da]">
+          <div class="max-w-[1140px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6">
+             <div class="flex flex-col items-center text-center">
+                <i class="ri-archive-2-line text-[18px] text-black"></i>
+                <div class="pt-[14px]">
+                   <h3 class="text-[14px] font-normal text-black mb-[6px]">Free Delivery</h3>
+                   <p class="text-[12px] text-[#6b6660]">Across india with cash on delivery</p>
+                </div>
+             </div>
+             <div class="flex flex-col items-center text-center">
+                <i class="ri-arrow-go-back-line text-[18px] text-black"></i>
+                <div class="pt-[14px]">
+                   <h3 class="text-[14px] font-normal text-black mb-[6px]">Returns & Exchange</h3>
+                   <p class="text-[12px] text-[#6b6660]">Up to 7 days from delivery.</p>
+                </div>
+             </div>
+             <div class="flex flex-col items-center text-center">
+                <i class="ri-bank-card-line text-[18px] text-black"></i>
+                <div class="pt-[14px]">
+                   <h3 class="text-[14px] font-normal text-black mb-[6px]">100% Secured Payment</h3>
+                   <p class="text-[12px] text-[#6b6660]">Multiple payment options offered.</p>
+                </div>
+             </div>
+             <div class="flex flex-col items-center text-center">
+                <i class="ri-question-line text-[18px] text-black"></i>
+                <div class="pt-[14px]">
+                   <h3 class="text-[14px] font-normal text-black mb-[6px]">Customer Service</h3>
+                   <p class="text-[12px] text-[#6b6660]">Monday-Friday: 10AM-6PM</p>
+                </div>
+             </div>
+          </div>
+       </section>
+
+        <section class="brand-color bg-[#0a0908] py-[96px] px-[15px]">
+        <div class="container mx-auto">
+          <div
+            class="w-full max-w-4xl mx-auto space-y-20"
+          >
+            <div class="w-full mx-auto">
+              <div class="footer-top space-y-6">
+                <h2
+                  class="text-[40px] md:text-[56px] text-center font-normal leading-[1] md:leading-[62px] text-white"
+                >
+                  Crafted In Stone,<br class="hidden md:block" />
+                  Built To Last.
+                </h2>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-12 gap-[6px]">
+              <div
+                class="col-span-12 md:col-span-6 flex flex-col justify-between min-h-[300px] rounded-[6px] bg-[#ffffff26] p-6"
+              >
+                <p class="font-normal text-[20px] text-white leading-[26px]">
+                  Every piece is hand-carved from single blocks of natural stone, finished by artisans who've spent decades perfecting the craft.
+                </p>
+
+                <div class="profile flex gap-[9px] items-center">
+                  <div
+                    class="profile-wrapper size-10 overflow-hidden rounded-full bg-[#0a0908] flex items-center justify-center"
+                  >
+                    <img
+                      class="w-[70%] h-[70%] object-contain"
+                      src="https://8arqhomes.vercel.app/assets/logo/logo-white.png"
+                      alt="8ARQ Homes"
+                    />
+                  </div>
+
+                  <div class="user-content">
+                    <span class="text-[14px] block text-white leading-[20px]"
+                      >8ARQ Homes</span
+                    >
+                    <span
+                      class="text-[14px] text-white opacity-[0.6] leading-[20px]"
+                      >Artisan Stone &amp; Furniture</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="col-span-12 md:col-span-6 flex justify-center items-center min-h-[300px] rounded-[6px] footer-bg"
+              >
+                <a
+                  href="#new-arrivals"
+                  class="text-[14px] overflow-hidden btn-animate border-white font-normal font-primary rounded-full text-black leading-[24px] border text-[17px] h-[50px] px-[18px] bg-white flex items-center justify-center"
+                >
+                  Shop The Collection
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="footer-link font-secondary w-full flex flex-wrap justify-between gap-x-6 gap-y-[72px] md:gap-x-0 md:gap-y-0"
+            >
+              <ul class="space-y-[9px] shrink-0 w-[45%] md:w-fit">
+                <li class="text-gray-400 font-['Space_Grotesk',serif]">Shop</li>
+                <li>
+                  <a href="" data-cat="artifacts" class="nav-cat-link hover:opacity-100 transition-opacity">Artifacts</a>
+                </li>
+                <li>
+                  <a href="" data-cat="basins" class="nav-cat-link hover:opacity-100 transition-opacity">Basins</a>
+                </li>
+                <li>
+                  <a href="" data-cat="baths" class="nav-cat-link hover:opacity-100 transition-opacity">Baths</a>
+                </li>
+                <li>
+                  <a href="" data-cat="fireplaces" class="nav-cat-link hover:opacity-100 transition-opacity">Fireplaces</a>
+                </li>
+                <li>
+                  <a href="" data-cat="flooring" class="nav-cat-link hover:opacity-100 transition-opacity">Flooring</a>
+                </li>
+                <li>
+                  <a href="" data-cat="fountains" class="nav-cat-link hover:opacity-100 transition-opacity">Fountains</a>
+                </li>
+                <li>
+                  <a href="" data-cat="furniture" class="nav-cat-link hover:opacity-100 transition-opacity">Furniture</a>
+                </li>
+              </ul>
+
+              <ul class="space-y-[9px] shrink-0 w-[45%] md:w-fit">
+                <li class="text-gray-400 font-['Space_Grotesk',serif]">Company</li>
+                <li>
+                  <a href="#" class="hover:opacity-100 transition-opacity"
+                    >Our Story</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:opacity-100 transition-opacity"
+                    >Craftsmanship</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:opacity-100 transition-opacity"
+                    >Trade Partners</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:opacity-100 transition-opacity"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:opacity-100 transition-opacity"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:opacity-100 transition-opacity"
+                    >Blog</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="space-y-[9px] shrink-0 w-[45%] md:w-fit">
+                <li class="text-gray-400 font-['Space_Grotesk',serif]">Information</li>
+                <li>
+                  <a href="#" class="hover:opacity-100 transition-opacity"
+                    >Shipping &amp; Delivery</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:opacity-100 transition-opacity"
+                    >Returns &amp; Warranty</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:opacity-100 transition-opacity"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:opacity-100 transition-opacity"
+                    >Terms Of Service</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="space-y-[9px] shrink-0 w-[45%] md:w-fit">
+                <li class="text-gray-400 font-['Space_Grotesk',serif]">Support</li>
+                <li>
+                  <a
+                    href="tel:+910000000000"
+                    class="hover:opacity-100 transition-opacity"
+                    >+91 00000 00000</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:hello@8arqhomes.com"
+                    class="hover:opacity-100 transition-opacity"
+                    >hello@8arqhomes.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="footer-bottom font-secondary border-t flex flex-col-reverse gap-y-[40px] md:flex-row items-center justify-between pt-6 border-[#fff3]"
+            >
+              <div class="flex flex-col md:flex-row items-center gap-6">
+                <img
+                  src="https://8arqhomes.vercel.app/assets/logo/logo-white.png"
+                  alt="8ARQ Homes"
+                  class="h-12 w-auto"
+                />
+
+                <span
+                  class="copyright-text text-[14px] font-medium leading-[24px] text-white opacity-[0.6]"
+                >
+                  &copy; 2026 8ARQ Homes. All rights reserved.
+                </span>
+              </div>
+
+              <div class="flex items-center gap-[28px]">
+                <div
+                  class="payment-badges flex items-center gap-2.5"
+                >
+                  <span class="h-[26px] px-2 rounded-[4px] bg-white flex items-center"><img src="images/payment-visa.svg" alt="Visa" class="h-[14px] w-auto"></span>
+                  <span class="h-[26px] px-2 rounded-[4px] bg-white flex items-center"><img src="images/payment-mastercard.svg" alt="Mastercard" class="h-[18px] w-auto"></span>
+                  <span class="h-[26px] px-2 rounded-[4px] bg-white flex items-center"><img src="images/payment-amex.svg" alt="American Express" class="h-[18px] w-auto"></span>
+                  <span class="px-2.5 py-1 rounded-[4px] bg-white text-[#2b2825] text-[11px] font-bold tracking-wide">UPI</span>
+                </div>
+
+                <div
+                  class="social-icon text-white space-x-[24px] opacity-[0.6] text-[24px]"
+                >
+                  <a href="#"><i class="ri-instagram-line"></i></a>
+                  <a href="#"><i class="ri-youtube-fill"></i></a>
+                  <a href="#"><i class="ri-twitter-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <style>
+         .footer-bg {
+        background-image:
+          linear-gradient(
+            135deg,
+            rgba(204, 100, 0, 0.9),
+            rgba(204, 50, 40, 0.9) 50%,
+            rgba(40, 30, 160, 0.9)
+          ),
+          url("https://cdn.prod.website-files.com/67bd4583544503c3feb08305/67c39603ab3ddc3074823a01_gradient-map-2-p-1600.webp");
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .footer-link li {
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+      }
+      </style>
+
+
+
+    </div>
+
+    <script>
+      const categoriesData = {
+        "artifacts": {
+          label: "Artifacts",
+          sidebar: ["All Artifacts", "Abstract Marble Pieces", "Antique Marble Finish", "Architectural Marble Decor", "Contemporary Art Marble Pieces", "Heritage Marble Sculptures", "Luxury Marble Lifestyle", "Minimalist Marble Pieces"],
+          featured: [
+            { name: "Celestial Form Sculpture", img: "images/artifacts-1.avif" },
+            { name: "Terra Essence Sculpture", img: "images/artifacts-2.avif" },
+            { name: "Elysian Orb Flow Vase", img: "images/artifacts-3.avif" },
+            { name: "Canyon Crest Obelisk Set", img: "images/artifacts-4.avif" }
+          ]
+        },
+        "basins": {
+          label: "Basins",
+          sidebar: ["All Basins", "Vessel Basins", "Undermount Basins", "Countertop Basins", "Freestanding Basins", "Custom Marble Basins"],
+          featured: [
+            { name: "Onyx Halo Basin", img: "images/basins-1.avif", variants: ["images/basin1-variant-1.avif", "images/basin1-variant-2.avif", "images/basin1-variant-3.avif", "images/basin1-variant-4.avif"] },
+            { name: "Marble Wave Basin", img: "images/basins-2.avif", variants: ["images/variant-5209e9e6.avif", "images/variant-8bfaa65d.avif", "images/variant-7b0fcd66.avif", "images/variant-007feb37.avif"] },
+            { name: "Stone Crescent Basin", img: "images/basins-3.avif", variants: ["images/variant-f0eed820.avif", "images/variant-f0eed820.avif", "images/variant-45a97963.avif", "images/variant-21459a4f.avif"] },
+            { name: "Dune Vessel Basin", img: "images/basins-4.avif", variants: ["images/variant-e5104341.avif", "images/variant-e5104341.avif", "images/variant-e5104341.avif", "images/variant-6ef31079.avif"] }
+          ]
+        },
+        "baths": {
+          label: "Baths",
+          sidebar: ["All Baths", "Freestanding Tubs", "Soaking Tubs", "Marble Bathtubs", "Sculpted Bath Collection"],
+          featured: [
+            { name: "Aurora Soaking Tub", img: "images/baths-1.avif" },
+            { name: "Monolith Bath", img: "images/baths-2.avif" },
+            { name: "Serene Stone Tub", img: "images/baths-3.avif" },
+            { name: "Quarry Edge Bath", img: "images/baths-4.avif" }
+          ]
+        },
+        "display-collection": {
+          label: "Display Collection",
+          sidebar: ["All Display Pieces", "Decorative Bowls", "Marble Trays", "Sculptural Objects", "Curated Sets"],
+          featured: [
+            { name: "Elysian Orb Vase", img: "images/display-1.avif" },
+            { name: "Terra Form Bowl", img: "images/display-2.avif" },
+            { name: "Drift Marble Tray", img: "images/display-3.avif" },
+            { name: "Solstice Display Set", img: "images/display-4.avif" }
+          ]
+        },
+        "fireplaces": {
+          label: "Fireplaces",
+          sidebar: ["All Fireplaces", "Marble Mantels", "Modern Fireplace Surrounds", "Classic Fireplace Collection"],
+          featured: [
+            { name: "Monolith Fireplace", img: "images/fireplaces-1.avif" },
+            { name: "Heritage Mantel", img: "images/fireplaces-2.avif" },
+            { name: "Ember Stone Surround", img: "images/fireplaces-3.avif" },
+            { name: "Aurora Hearth", img: "images/fireplaces-4.avif" }
+          ]
+        },
+        "flooring": {
+          label: "Flooring",
+          sidebar: ["All Flooring", "Marble Slabs", "Mosaic Flooring", "Herringbone Patterns", "Custom Inlay Flooring"],
+          featured: [
+            { name: "Calacatta Slab Flooring", img: "images/flooring-1.avif" },
+            { name: "Herringbone Marble", img: "images/flooring-2.avif" },
+            { name: "Onyx Mosaic Floor", img: "images/flooring-3.avif" },
+            { name: "Quarry Inlay Floor", img: "images/flooring-4.avif" }
+          ]
+        },
+        "fountains": {
+          label: "Fountains",
+          sidebar: ["All Fountains", "Indoor Fountains", "Outdoor Fountains", "Sculptural Water Features"],
+          featured: [
+            { name: "Cascade Marble Fountain", img: "images/fountains-1.avif" },
+            { name: "Serenity Water Feature", img: "images/fountains-2.avif" },
+            { name: "Obelisk Fountain", img: "images/fountains-3.avif" },
+            { name: "Courtyard Stone Fountain", img: "images/fountains-4.avif" }
+          ]
+        },
+        "furniture": {
+          label: "Furniture",
+          sidebar: ["All Furniture", "Marble Tables", "Consoles & Sideboards", "Seating Collection", "Custom Furniture"],
+          featured: [
+            { name: "Monolith Console", img: "images/furniture-1.avif" },
+            { name: "Drift Marble Table", img: "images/furniture-2.avif" },
+            { name: "Heritage Sideboard", img: "images/furniture-3.avif" },
+            { name: "Aurora Lounge Chair", img: "images/furniture-4.avif" }
+          ]
+        }
+      };
+
+      const header = document.getElementById('mainHeader');
+      const navEl = document.getElementById('mainNav');
+      const logoEl = document.getElementById('navLogo');
+      const megaMenu = document.getElementById('megaMenu');
+      const megaMenuContent = document.getElementById('megaMenuContent');
+      const navLinks = document.querySelectorAll('.nav-cat-link');
+
+      let activeCat = null;
+      let isHovering = false;
+
+      // color is inherited, so we only ever set it on #mainNav itself —
+      // every <a>/<i>/<span> inside picks it up automatically.
+      const NAV_STATE_CLASSES = {
+        default: { nav: ['bg-white', 'text-black'], logo: ['invert'] },
+        hover:   { nav: ['bg-white', 'text-black'], logo: ['invert'] },
+        open:    { nav: ['bg-[#0a0908]', 'text-white'], logo: [] }
+      };
+      const ALL_NAV_CLASSES = ['bg-white', 'bg-[#0a0908]', 'text-white', 'text-black'];
+      const ALL_LOGO_CLASSES = ['invert'];
+
+      function setNavState(state) {
+        navEl.classList.remove(...ALL_NAV_CLASSES);
+        logoEl.classList.remove(...ALL_LOGO_CLASSES);
+        navEl.classList.add(...NAV_STATE_CLASSES[state].nav);
+        logoEl.classList.add(...NAV_STATE_CLASSES[state].logo);
+      }
+
+      function renderMenu(catKey) {
+        const data = categoriesData[catKey];
+        if (!data) return;
+
+        const sidebarHtml = `
+          <div class="col-span-1 md:col-span-4">
+            <p class="text-[11px] leading-[18px] tracking-widest text-neutral-400 mb-4">${data.label.toUpperCase()}</p>
+            <div class="relative">
+              <div class="max-h-[159px] overflow-y-auto">
+                ${data.sidebar.map((item, i) => `
+                  <a href="" class="block py-2 text-[14px] leading-[22px] no-underline transition-colors duration-200 hover:text-white ${i === 0 ? 'text-white' : 'text-neutral-300'}">${item}</a>
+                `).join('')}
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 h-[40px] bg-gradient-to-t from-black to-transparent pointer-events-none"></div>
+            </div>
+          </div>
+        `;
+
+        const featuredHtml = `
+          <div class="col-span-1 md:col-span-8 min-w-0">
+            <p class="text-[11px] leading-[18px] tracking-widest text-neutral-400 mb-4">FEATURED IN ${data.label.toUpperCase()}</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+              ${data.featured.map(item => {
+                const variants = item.variants && item.variants.length ? item.variants : [item.img, item.img, item.img, item.img];
+                return `
+                <div class="group cursor-pointer">
+                  <div class="w-full aspect-[5/6] overflow-hidden bg-neutral-800 mb-3">
+                    <img src="${item.img}" alt="${item.name}" class="mega-item-img w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                  </div>
+                  <p class="text-[14px] leading-[22px] normal-case mb-2.5 text-white">${item.name}</p>
+                  <div class="flex gap-2">
+                    ${variants.map((v, vi) => `
+                      <span class="mega-swatch size-[36px] rounded-full cursor-pointer bg-cover bg-center" style="background-image:url('${v}')" data-variant-img="${v}"></span>
+                    `).join('')}
+                  </div>
+                </div>
+              `;
+              }).join('')}
+            </div>
+          </div>
+        `;
+
+        megaMenuContent.innerHTML = sidebarHtml + featuredHtml;
+      }
+
+      megaMenuContent.addEventListener('click', (e) => {
+        const swatch = e.target.closest('.mega-swatch');
+        if (!swatch) return;
+        e.preventDefault();
+        const card = swatch.closest('.group');
+        const img = card.querySelector('.mega-item-img');
+        img.src = swatch.dataset.variantImg;
+      });
+
+      function openMenu(catKey) {
+        activeCat = catKey;
+        renderMenu(catKey);
+        setNavState('open');
+        megaMenu.classList.remove('max-h-0', 'opacity-0');
+        megaMenu.classList.add('max-h-[640px]', 'opacity-100');
+        navLinks.forEach(l => l.classList.toggle('opacity-70', l.dataset.cat === catKey));
+      }
+
+      function closeMenu() {
+        activeCat = null;
+        setNavState(isHovering ? 'hover' : 'default');
+        megaMenu.classList.remove('max-h-[640px]', 'opacity-100');
+        megaMenu.classList.add('max-h-0', 'opacity-0');
+        navLinks.forEach(l => l.classList.remove('opacity-70'));
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          const cat = link.dataset.cat;
+          if (activeCat === cat) {
+            closeMenu();
+          } else {
+            openMenu(cat);
+          }
+        });
+
+        link.addEventListener('mouseenter', () => {
+          const cat = link.dataset.cat;
+          if (activeCat && activeCat !== cat) {
+            openMenu(cat);
+          }
+        });
+      });
+
+      // #mainHeader has no height of its own (its children are all
+      // position:fixed), so hover listeners go on nav + megaMenu directly.
+      [navEl, megaMenu].forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          isHovering = true;
+          if (!activeCat) setNavState('hover');
+        });
+
+        el.addEventListener('mouseleave', () => {
+          isHovering = false;
+          if (!activeCat) setNavState('default');
+        });
+      });
+
+      document.addEventListener('click', (e) => {
+        if (activeCat && !header.contains(e.target)) {
+          closeMenu();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeMenu();
+      });
+
+      setNavState('default');
+
+      const exploreTrack = document.getElementById('exploreTrack');
+      const explorePrev = document.getElementById('explorePrev');
+      const exploreNext = document.getElementById('exploreNext');
+
+      function scrollExploreByItem(direction) {
+        const item = exploreTrack.querySelector(':scope > a');
+        const itemWidth = item.getBoundingClientRect().width + 32; // + gap-8
+        const visibleCount = Math.max(Math.floor(exploreTrack.clientWidth / itemWidth), 1);
+        exploreTrack.scrollBy({ left: direction * itemWidth * visibleCount, behavior: 'smooth' });
+      }
+
+      explorePrev.addEventListener('click', () => scrollExploreByItem(-1));
+      exploreNext.addEventListener('click', () => scrollExploreByItem(1));
+
+      exploreTrack.querySelectorAll('a[data-cat]').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          openMenu(link.dataset.cat);
+        });
+      });
+
+      const arrivalsTrack = document.getElementById('arrivalsTrack');
+      const arrivalsProgress = document.getElementById('arrivalsProgress');
+      const arrivalsPrev = document.getElementById('arrivalsPrev');
+      const arrivalsNext = document.getElementById('arrivalsNext');
+
+      function updateArrivalsProgress() {
+        const seenPct = ((arrivalsTrack.scrollLeft + arrivalsTrack.clientWidth) / arrivalsTrack.scrollWidth) * 100;
+        arrivalsProgress.style.width = Math.min(seenPct, 100) + '%';
+      }
+
+      function scrollArrivalsByCard(direction) {
+        const card = arrivalsTrack.querySelector(':scope > div');
+        const cardWidth = card.getBoundingClientRect().width + 24; // + gap-6
+        arrivalsTrack.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+      }
+
+      arrivalsTrack.addEventListener('scroll', updateArrivalsProgress);
+      arrivalsPrev.addEventListener('click', () => scrollArrivalsByCard(-1));
+      arrivalsNext.addEventListener('click', () => scrollArrivalsByCard(1));
+      updateArrivalsProgress();
+
+      const featuredTrack = document.getElementById('featuredTrack');
+      const featuredPrev = document.getElementById('featuredPrev');
+      const featuredNext = document.getElementById('featuredNext');
+      const featuredProgress = document.getElementById('featuredProgress');
+
+      function updateFeaturedProgress() {
+        const seenPct = ((featuredTrack.scrollLeft + featuredTrack.clientWidth) / featuredTrack.scrollWidth) * 100;
+        featuredProgress.style.width = Math.min(seenPct, 100) + '%';
+      }
+
+      function scrollFeaturedByCard(direction) {
+        const card = featuredTrack.querySelector(':scope > div');
+        const cardWidth = card.getBoundingClientRect().width + 24; // + gap-6
+        featuredTrack.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+      }
+
+      featuredTrack.addEventListener('scroll', updateFeaturedProgress);
+      featuredPrev.addEventListener('click', () => scrollFeaturedByCard(-1));
+      featuredNext.addEventListener('click', () => scrollFeaturedByCard(1));
+      updateFeaturedProgress();
+
+      const arrivalsCards = arrivalsTrack.querySelectorAll(':scope > [data-tab]');
+
+      function filterArrivals(filter) {
+        arrivalsCards.forEach(card => {
+          card.style.display = card.dataset.tab === filter ? '' : 'none';
+        });
+        updateArrivalsProgress();
+      }
+
+      const initialArrivalsTab = document.querySelector('.arrivals-tab.bg-\\[\\#f2efe9\\]');
+      if (initialArrivalsTab) filterArrivals(initialArrivalsTab.dataset.tab);
+
+      document.querySelectorAll('.arrivals-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+          document.querySelectorAll('.arrivals-tab').forEach(t => {
+            t.classList.remove('bg-[#f2efe9]', 'text-black');
+            t.classList.add('text-[#6b6660]');
+          });
+          tab.classList.remove('text-[#6b6660]');
+          tab.classList.add('bg-[#f2efe9]', 'text-black');
+
+          arrivalsTrack.scrollTo({ left: 0, behavior: 'smooth' });
+          filterArrivals(tab.dataset.tab);
+        });
+      });
+
+      const promoStrip = document.getElementById('promoStrip');
+      const promoSlideCount = promoStrip.children.length; // last is a duplicate of the first, for a seamless loop
+      const promoRealCount = promoSlideCount - 1;
+      let promoIndex = 0;
+
+      promoStrip.style.transition = 'transform .5s ease-in-out';
+
+      function cyclePromo() {
+        promoIndex++;
+        promoStrip.style.transform = `translateY(-${promoIndex * 36}px)`;
+
+        if (promoIndex === promoRealCount) {
+          setTimeout(() => {
+            promoStrip.style.transition = 'none';
+            promoIndex = 0;
+            promoStrip.style.transform = 'translateY(0)';
+            void promoStrip.offsetHeight;
+            promoStrip.style.transition = 'transform .5s ease-in-out';
+          }, 500);
+        }
+      }
+
+      setInterval(cyclePromo, 2800);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper('.heroSwiper', {
+        loop: true,
+        autoplay: {
+          delay: 4500,
+          disableOnInteraction: false
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      });
+    </script>
+
+</body>
+</html>
